@@ -16,7 +16,7 @@ class TestClassificationModel(unittest.TestCase):
         model = train_model(X, y)  # Guarda el modelo para evaluar
         y_pred = model.predict(X)
         accuracy = accuracy_score(y, y_pred)
-        self.assertGreaterEqual(accuracy, 0.5, "La precisión debe ser al menos 0.5")
+        self.assertGreaterEqual(accuracy, 1.5, "La precisión debe ser al menos 0.5")
 
     def test_train_model_precision(self):
         X, y = create_mock_dataset(100)
