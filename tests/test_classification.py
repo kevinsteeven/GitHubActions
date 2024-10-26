@@ -23,7 +23,7 @@ class TestClassificationModel(unittest.TestCase):
         model = train_model(X, y)  # Guarda el modelo para evaluar
         y_pred = model.predict(X)
         precision = precision_score(y, y_pred)
-        self.assertGreaterEqual(precision, 0.5, "La precisión debe ser al menos 0.5")
+        self.assertGreaterEqual(precision, 2, "La precisión debe ser al menos 0.5")
 
 # Ejecutar las pruebas solo si este archivo se ejecuta directamente
 if __name__ == "__main__":
