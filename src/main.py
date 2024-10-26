@@ -9,7 +9,7 @@ def create_mock_dataset(num_samples=100):
     np.random.seed(42)
     X = np.random.rand(num_samples, 2)  # 2 características
     y = (X[:, 0] + X[:, 1] > 1).astype(int)  # Clase 1 si la suma de las características es > 1
-    return pd.DataFrame(X, columns=['feature1', 'feature2']), y
+    return pd.DataFrame(X, columns=['feature1', 'feature3']), y
 
 # Entrenar el modelo
 def train_model(X, y):
